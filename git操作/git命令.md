@@ -1,5 +1,7 @@
 - 创建新仓库
-''' git init '''
+'''
+git init
+'''
 
 - 检索出仓库
 '''git clone git@github.com:nickname/repository.git'''
