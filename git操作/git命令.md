@@ -5,8 +5,8 @@
 ```git clone git@github.com:nickname/repository.git```
 
 - 添加文件
-```git add <filename>
-git add *```
+```git add <filename>```
+```git add *```
 
 - 提交
 ```git commit -m "代码提交信息"```
