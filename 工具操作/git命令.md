@@ -20,7 +20,7 @@
 
   ```git push origin master```
 
-- 连接远程仓库
+- 关联远程仓库
 
   ```git remote add origin master```
 
