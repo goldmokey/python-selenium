@@ -163,6 +163,47 @@ XPath表达式用于在xml文档中定位节点。表达式以“//”开头。/
 
 7. CSS定位
 
+    CSS(Cascading Style Sheets)描述HTML和XML文档显示方式的语言。CSS使用选择器来为文档中的元素绑定样式属性。
+
+    [更多关于CSS选择器](http://www.w3.org/TR/css3-selectors)
+
+    > 推荐使用CSS定位，这种方式比Xpath更快，更容易找到在HTML中的复杂对象。
+
+8. 隐式定位
+
+    > 在遇到以下情况时，Target表达式中可以省略“定位类型=”
+    - 没有指定定位方式，默认使用identifier
+    - 如果以“//”开头，则会使用Xpath
+    - 如果以“document”开头，则会使用DOM定位
+
+#### Value
+
+1. 带变量的字符串 
+
+    |Command|Target|Value|
+    |-|-|-|
+    |store|Bill|firstName|
+    |store|Gates|lastName|
+    |open|http://www.baidu.com||
+    |type|id=kw|Full name is:${firstName} ${lastName}|
+
+2. 带JavaScript的字符串
+
+    |Command|Target|Value|
+    |-|-|-|
+    |store|Bill|firstName|
+    |store|Gates|lastName|
+    |open|http://www.baidu.com||
+    |type|id=kw|javascript{"Full name is:"+storedVars["firstName"].toUpperCase()+""+storeVars["lastName"].toUpperCase()}|
+
+#### 日志与引用
+
+Log|Reference|UI-Element|Rollup
+
+#### 命令复制与导出为代码
+
+- 复制不同源码的代码
+- 导出不同源码的代码
 
 
 
